@@ -25,11 +25,11 @@ let printProducts = (products) => {
   }
 };
 let soldb = (colaA, colaB) => {
-  if (colaA.sold > colaB.sold) {
+  (colaA.sold > colaB.sold)?
     return 1;
-  } else if (colaA.sold === colaB.sold) {
+  (colaA.sold === colaB.sold)?
     return 0;
-  } else {
+(colaA.sold < colaB.sold) ?
     return -1;
   }
 };
@@ -39,11 +39,11 @@ let solda = () => {
   printProducts(products);
 };
 let colorb = (colaA, colaB) => {
-  if (colaA.color > colaB.color) {
+  (colaA.color > colaB.color) ?
     return 1;
-  } else if (colaA.color === colaB.color) {
+   (colaA.color === colaB.color) ?
     return 0;
-  } else {
+   (colaA.color < colaB.color) ?
     return -1;
   }
 };
@@ -53,11 +53,11 @@ let colora = () => {
   printProducts(products);
 };
 let caloriesb = (colaA, colaB) => {
-  if (colaA.calories > colaB.calories) {
+  (colaA.calories > colaB.calories) ?
     return 1;
-  } else if (colaA.calories === colaB.calories) {
+  (colaA.calories === colaB.calories)?
     return 0;
-  } else {
+  (colaA.calories < colaB.calories) ?
     return -1;
   }
 };
@@ -67,11 +67,11 @@ let caloriesa = () => {
   printProducts(products);
 };
 let namesb = (colaA, colaB) => {
-  if (colaA.names > colaB.names) {
+  (colaA.names > colaB.names) ?
     return 1;
-  } else if (colaA.names === colaB.names) {
+  (colaA.names === colaB.names) ?
     return 0;
-  } else {
+  (colaA.names < colaB.names) ?
     return -1;
   }
 };
@@ -82,11 +82,11 @@ let namesa = () => {
 };
 
 let soldc = (colaA, colaB) => {
-  if (colaA.sold > colaB.sold) {
+  (colaA.sold > colaB.sold) ?
     return -1;
-  } else if (colaA.sold === colaB.sold) {
+  (colaA.sold === colaB.sold)?
     return 0;
-  } else {
+  colaA.sold < colaB.sold ?
     return 1;
   }
 };
