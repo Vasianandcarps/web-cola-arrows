@@ -25,13 +25,13 @@ let printProducts = (products) => {
   }
 };
 let soldb = (colaA, colaB) => {
-  (colaA.sold > colaB.sold)?
-    return 1;
-  (colaA.sold === colaB.sold)?
-    return 0;
-(colaA.sold < colaB.sold) ?
-    return -1;
-  }
+  colaA.sold > colaB.sold
+    ? 1
+    : colaA.sold === colaB.sold
+    ? 0
+    : colaA.sold < colaB.sold
+    ? -1
+    : "NaN";
 };
 let solda = () => {
   document.write("compareSold<br>");
@@ -39,13 +39,13 @@ let solda = () => {
   printProducts(products);
 };
 let colorb = (colaA, colaB) => {
-  (colaA.color > colaB.color) ?
-    return 1;
-   (colaA.color === colaB.color) ?
-    return 0;
-   (colaA.color < colaB.color) ?
-    return -1;
-  }
+  colaA.color > colaB.color
+    ? 1
+    : colaA.color === colaB.color
+    ? 0
+    : colaA.color < colaB.color
+    ? -1
+    : "NaN";
 };
 let colora = () => {
   document.write("compareColor<br>");
@@ -53,13 +53,13 @@ let colora = () => {
   printProducts(products);
 };
 let caloriesb = (colaA, colaB) => {
-  (colaA.calories > colaB.calories) ?
-    return 1;
-  (colaA.calories === colaB.calories)?
-    return 0;
-  (colaA.calories < colaB.calories) ?
-    return -1;
-  }
+  colaA.calories > colaB.calories
+    ? 1
+    : colaA.calories === colaB.calories
+    ? 0
+    : colaA.calories < colaB.calories
+    ? -1
+    : "NaN";
 };
 let caloriesa = () => {
   document.write("compareCalories<br>");
@@ -67,13 +67,13 @@ let caloriesa = () => {
   printProducts(products);
 };
 let namesb = (colaA, colaB) => {
-  (colaA.names > colaB.names) ?
-    return 1;
-  (colaA.names === colaB.names) ?
-    return 0;
-  (colaA.names < colaB.names) ?
-    return -1;
-  }
+  colaA.names > colaB.names
+    ? 1
+    : colaA.names === colaB.names
+    ? 0
+    : colaA.names < colaB.names
+    ? -1
+    : "NaN";
 };
 let namesa = () => {
   document.write("compareName<br>");
@@ -82,13 +82,13 @@ let namesa = () => {
 };
 
 let soldc = (colaA, colaB) => {
-  (colaA.sold > colaB.sold) ?
-    return -1;
-  (colaA.sold === colaB.sold)?
-    return 0;
-  colaA.sold < colaB.sold ?
-    return 1;
-  }
+  colaA.sold > colaB.sold
+    ? -1
+    : colaA.sold === colaB.sold
+    ? 0
+    : colaA.sold < colaB.sold
+    ? 1
+    : "NaN";
 };
 let soldd = () => {
   document.write("compareSold<br>");
@@ -96,13 +96,13 @@ let soldd = () => {
   printProducts(products);
 };
 let colorc = (colaA, colaB) => {
-  (colaA.color > colaB.color) ?
-    return -1;
-  (colaA.color === colaB.color) ?
-    return 0;
-  colaA.color < colaB.color ?
-    return 1;
-  }
+  colaA.color > colaB.color
+    ? -1
+    : colaA.color === colaB.color
+    ? 0
+    : colaA.color < colaB.color
+    ? 1
+    : "NaN";
 };
 let colord = () => {
   document.write("compareColor<br>");
@@ -110,13 +110,13 @@ let colord = () => {
   printProducts(products);
 };
 let caloriesc = (colaA, colaB) => {
-  (colaA.calories > colaB.calories) ?
-    return -1;
-  (colaA.calories === colaB.calories) ?
-    return 0;
-  colaA.calories < colaB.calories ?
-    return 1;
-  }
+  colaA.calories > colaB.calories
+    ? -1
+    : colaA.calories === colaB.calories
+    ? 0
+    : colaA.calories < colaB.calories
+    ? 1
+    : "NaN";
 };
 let caloriesd = () => {
   document.write("compareCalories<br>");
@@ -124,14 +124,15 @@ let caloriesd = () => {
   printProducts(products);
 };
 let namesc = (colaA, colaB) => {
-   colaA.names > colaB.names ?
-    return -1;
-  colaA.names === colaB.name ?
-    return 0;
-  colaA.names < colaB.names ?
-    return 1;
-  }
+  colaA.names > colaB.names
+    ? -1
+    : colaA.names === colaB.name
+    ? 0
+    : colaA.names < colaB.names
+    ? 1
+    : "NaN";
 };
+
 let namesd = () => {
   document.write("compareName<br>");
   products.sort(namesc);
