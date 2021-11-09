@@ -96,11 +96,11 @@ let soldd = () => {
   printProducts(products);
 };
 let colorc = (colaA, colaB) => {
-  if (colaA.color > colaB.color) {
+  (colaA.color > colaB.color) ?
     return -1;
-  } else if (colaA.color === colaB.color) {
+  (colaA.color === colaB.color) ?
     return 0;
-  } else {
+  colaA.color < colaB.color ?
     return 1;
   }
 };
@@ -110,11 +110,11 @@ let colord = () => {
   printProducts(products);
 };
 let caloriesc = (colaA, colaB) => {
-  if (colaA.calories > colaB.calories) {
+  (colaA.calories > colaB.calories) ?
     return -1;
-  } else if (colaA.calories === colaB.calories) {
+  (colaA.calories === colaB.calories) ?
     return 0;
-  } else {
+  colaA.calories < colaB.calories ?
     return 1;
   }
 };
@@ -124,11 +124,11 @@ let caloriesd = () => {
   printProducts(products);
 };
 let namesc = (colaA, colaB) => {
-  if (colaA.names > colaB.names) {
+   colaA.names > colaB.names ?
     return -1;
-  } else if (colaA.names === colaB.names) {
+  colaA.names === colaB.name ?
     return 0;
-  } else {
+  colaA.names < colaB.names ?
     return 1;
   }
 };
