@@ -31,7 +31,7 @@ let soldb = (colaA, colaB) => {
     ? 0
     : colaA.sold < colaB.sold
     ? -1
-    : "NaN";
+
 };
 let solda = () => {
   document.write("compareSold<br>");
@@ -45,7 +45,7 @@ let colorb = (colaA, colaB) => {
     ? 0
     : colaA.color < colaB.color
     ? -1
-    : "NaN";
+   
 };
 let colora = () => {
   document.write("compareColor<br>");
@@ -59,7 +59,7 @@ let caloriesb = (colaA, colaB) => {
     ? 0
     : colaA.calories < colaB.calories
     ? -1
-    : "NaN";
+    
 };
 let caloriesa = () => {
   document.write("compareCalories<br>");
@@ -73,7 +73,7 @@ let namesb = (colaA, colaB) => {
     ? 0
     : colaA.names < colaB.names
     ? -1
-    : "NaN";
+   
 };
 let namesa = () => {
   document.write("compareName<br>");
@@ -88,7 +88,7 @@ let soldc = (colaA, colaB) => {
     ? 0
     : colaA.sold < colaB.sold
     ? 1
-    : "NaN";
+    
 };
 let soldd = () => {
   document.write("compareSold<br>");
@@ -102,7 +102,7 @@ let colorc = (colaA, colaB) => {
     ? 0
     : colaA.color < colaB.color
     ? 1
-    : "NaN";
+    
 };
 let colord = () => {
   document.write("compareColor<br>");
@@ -116,7 +116,7 @@ let caloriesc = (colaA, colaB) => {
     ? 0
     : colaA.calories < colaB.calories
     ? 1
-    : "NaN";
+    
 };
 let caloriesd = () => {
   document.write("compareCalories<br>");
@@ -130,7 +130,7 @@ let namesc = (colaA, colaB) => {
     ? 0
     : colaA.names < colaB.names
     ? 1
-    : "NaN";
+    
 };
 
 let namesd = () => {
